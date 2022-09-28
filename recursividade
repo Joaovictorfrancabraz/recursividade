@@ -1,0 +1,25 @@
+package Recursividade;
+import java.util.Scanner;
+
+ public class opa {
+     public static void main(String[] args) {
+       System.out.println("insira");
+       Scanner sc= new Scanner(System.in);
+       int soma= 0;
+       int n = sc.nextInt();
+
+       Recursiva(n,soma);
+       }
+       private static int Recursiva(int n,int soma){
+        if( n==0){
+            
+        return soma;
+
+        }else {
+          soma =  n + 1;
+          n=n-1;
+          return Recursiva(n,soma);
+        }
+       }
+    
+}
